@@ -1,17 +1,10 @@
-<div id="<%= dom_id location %>">
-  <p>
-    <strong>Address:</strong>
-    <%= location.address %>
-  </p>
-
+<div id="<%= dom_id location %>" class="card">
+  <h3> <%= location.address %> </h3>
   <p>
     <strong>Latitude:</strong>
-    <%= location.latitude %>
-  </p>
-
-  <p>
+    <%= location.latitude.round(2) %>
     <strong>Longitude:</strong>
-    <%= location.longitude %>
+    <%= location.longitude.round(2) %>
   </p>
-
 </div>
+
