@@ -2,13 +2,18 @@
 
 <h1>Locations</h1>
 
-<div id="locations">
+<%= link_to "New location", new_location_path %>
+
+<%= form_tag locations_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+
+<div id="locations" class="card-container">
   <% @locations.each do |location| %>
     <%= render location %>
-    <p>
-      <%= link_to "Show this location", location %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New location", new_location_path %>
