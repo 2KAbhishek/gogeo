@@ -1,10 +1,20 @@
 <p style="color: green"><%= notice %></p>
-
-<%= render @location %>
-
-<div>
-  <%= link_to "Edit this location", edit_location_path(@location) %> |
+<div class="center-all">
   <%= link_to "Back to locations", locations_path %>
 
-  <%= button_to "Destroy this location", @location, method: :delete %>
+  <%= render @location %>
+
+  <div>
+    <%= button_to "Destroy this location", @location, method: :delete %>
+  </div>
+
+  <p>
+  <h4>Nearby locations</h4>
+  <ol>
+  <% for location in @location.nearbys(200) %>
+    <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> KM)</li>
+  <% end %>
+  </ol>
+  </p>
 </div>
+
