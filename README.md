@@ -34,6 +34,7 @@ gogeo is a tiny rails app that lets you save and lookup addresses across the glo
 
 ## ✨ Features
 
+- Find coordinates from address and vice versa
 - CRUD Operations on Locations
 - Search support for existing locations
 - Easily locate places close to each other
