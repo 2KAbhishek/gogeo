@@ -6,5 +6,11 @@
     <strong>Longitude:</strong>
     <%= location.longitude.round(2) %>
   </p>
+  <% if current_page?(locations_path) %>
+    <%= link_to "Show this location", location %>
+  <% end %>
+  <% if action_name == 'show' %>
+    <%= link_to 'Edit this location', edit_location_path(location) %>
+  <% end %>
 </div>
 
