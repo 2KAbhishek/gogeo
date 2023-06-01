@@ -20,7 +20,7 @@
 <a href="https://github.com/2KAbhishek/gogeo/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/gogeo?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
+<h3>Fun with Geocoder and Rails 🌏🚂</h3>
 
 <figure>
   <img src="images/screenshot.png" alt="gogeo in action">
@@ -30,68 +30,55 @@
 
 </div>
 
-gogeo is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+gogeo is a tiny rails app that lets you save and lookup addresses across the globe.
 
 ## ✨ Features
 
-- Supports foo
-- Can do bar
-- Works with bazz
+- CRUD Operations on Locations
+- Search support for existing locations
+- Easily locate places close to each other
+- Auto update address and coordinates based on input
+- Powered by Geocoder
+- Easily extensible
 
 ## Setup
 
 ### ⚡ Requirements
 
-- foo >= bar
-- bazz
+- ruby 3.2.2
+- rails 7
 
 ### 🚀 Installation
 
 ```bash
 git clone https://github.com/2kabhishek/gogeo
 cd gogeo
-<install_command>
+rake db:create && rake db:migrate
+rails s
 ```
 
 ### 💻 Usage
 
-```bash
-USAGE:
-    gogeo [FLAGS] [OPTIONS]
-Example:
-    gogeo
-```
+After running the server go to [localhost:3000](http://localhost:3000)
 
-## What's Next
-
-Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
+Go through the code, extend it however you want.
 
 ##  Behind The Code
 
 ### 🌈 Inspiration
 
-gogeo was inspired by `<reason/idea>`.
+Needed Geocoder for a work feature, decided to build this while learning.
 
 ### 💡 Challenges/Learnings
 
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+- Not restarting rails server after installing geocoder wasted some time.
+- Learned about Geocoder API and various configuration options
 
 ### 🧰 Tooling
 
 - [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
-
-### 🔍 More Info
-
-- [similar](https://github.com/2kabhishek/similar) — a related repo
+- [Macfiles](https://github.com/2kabhishek/Macfiles) — Mac Dev Environment
 
 <hr>
 
