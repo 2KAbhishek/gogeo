@@ -14,6 +14,18 @@
  *= require_self
  */
 
+h4 {
+    margin: 0;
+}
+
+input[type="text"] {
+    padding: 4px;
+    margin: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
 .center-content {
     min-height: 10vh;
     text-align: center;
